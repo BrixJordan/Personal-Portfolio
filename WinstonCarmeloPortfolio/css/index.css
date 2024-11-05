@@ -1,0 +1,242 @@
+:root{
+    --dark-background: #343a40;
+    --dark-text: #343a40;
+    --deeppink: #f0128a;
+    --light-blue: #00BFFF;
+    --dark-light-blue: #037eb9;
+    --dark-blue: #252934;
+    --black-minus-one: #383838;
+    --black-minus-two: #606060;
+    --light-gray: #787878;
+    --black: #1e242c;
+    --black-blue: #1b242f;
+    --white: #fff;
+    --white1: #f5f5f5;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* general */
+.barline-black{
+    width: auto;
+    height: 5px;
+    background-color: var(--dark-background);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.barline-white{
+    width: auto;
+    height: 5px;
+    background-color: var(--white);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.section-header-title{
+    margin-top: 80px;
+}
+
+.text-blue{
+    color: var(--dark-light-blue);
+}
+
+
+
+/* home */
+#home{
+    height: 100vh;
+    background-image: url('../img/home_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.author-name{
+    color: var(--deeppink);
+}
+
+
+
+
+/* navbar */
+.nav{
+    background-color: var(--dark-text);
+    border-bottom: 2px solid var(--light-blue);
+    border-top: 1px solid var(--light-blue);
+}
+
+.navbar-toggler{
+    border: 1px solid white;
+}
+
+.hamburger{
+    color: white;
+}
+
+.nav-link{
+    color: white;
+    letter-spacing: normal;
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+.active{
+    color: var(--deeppink);
+}
+
+.nav-link:hover{
+    color: var(--deeppink);
+}
+
+
+/* about */
+#about{
+    height: auto;
+}
+
+.profile-pic{
+    height: 40vh;
+    width: 30vh;
+    background-image: url(../img/pro.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+}
+
+#about h4{
+    color: var(--black-minus-two);
+    font-weight: 600;
+    margin-top: 35px;
+}
+
+#about p{
+    color: var(--light-gray);
+}
+
+#about .skills{
+    height: 10%;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Experience */
+#experience{
+    height: auto;
+    background-color: var(--white1);
+}
+
+#experience .position{
+    font-weight: 500;
+    color: var(--black-minus-two);
+}
+
+
+/* Portfolio */
+/* #portfolio{
+    height: auto;
+    background-color: var(--white);
+}
+
+#portfolio img{
+    height: 20vh;
+    width: 30vh;
+} */
+
+/* Contact */
+#contact{
+    background-color: var(--dark-background);
+    height: 80vh;
+}
+
+#questionLabel{
+    color: #00BFFF;
+    margin-top: 30px;
+}
+
+#nameInput{
+    width: 50%;
+}
+
+#emailInput{
+    width: 50%;
+}
+
+#messageInput{
+    width: 50%;
+}
+
+#sendButton{
+    width: 20%;
+}
+
+#footer{
+   height: 20vh;
+   background-color: #1b242f;
+}
+
+#footer button{
+    margin: 17px;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+#footer button:hover{
+    background-color: #4e6168;
+}
+
+#footer i{
+    font-size: 20pt;
+}
+
+#footer p{
+    color: grey;
+    margin-top: 15px;;
+}
+
+#footer #copyright{
+    color: #f0128a;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .section-header-title{
+        font-size: 20pt;
+    }
+
+    /* home */
+    #home .greetings{
+        font-size: 22px;
+    }
+    #home .position{
+        font-size: 22px;
+    }
+
+    /* experience */
+    #experience .position{
+        font-size: 15pt;
+    }
+
+    #experience .company-name{
+        font-size: 13pt;
+    }
+
+    #experience .work-range{
+        font-size: 12pt;
+    }
+
+    /* contact */
+    #contact .text-input {
+        width: 90%;
+    }
+
+    #contact #sendButton{
+        width: 50%;
+    }
+}
